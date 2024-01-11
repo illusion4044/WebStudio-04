@@ -86,6 +86,11 @@ text-decoration: none;
     gap: 40px;
 }
 
+.adress-link:hover,
+.adress-link:focus{
+    color: #404BBF;
+}
+
 .logo {
     color: #4D5AE5;
 font-family: Raleway, sans-serif;
@@ -361,6 +366,38 @@ margin-bottom: 8px;
 }
 /* SECTION4 */
 
+.cover-app{
+    position: relative;
+    overflow: hidden;
+}
+
+.app-text-wrap{
+position: absolute;
+width: 360px;
+height: 300px;
+flex-shrink: 0;
+top: 0;
+background: #4D5AE5;
+display: flex;
+align-items: center;
+padding: 0 32px;
+transform: translateY(100%);
+transition: transform 250ms linear;
+}
+
+.app-cover-text{
+position: absolute;
+color:#F4F4FD;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.5px;
+letter-spacing: 0.5em;
+}
+
+.app-card:hover .app-text-wrap{
+    transform: translateY(0%);
+}
+
 .section-four {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -377,6 +414,7 @@ margin-bottom: 8px;
     border: 1px solid #E7E9FC;
     background: #FFF;
     width: calc((100% - 48px) / 3);
+    position: relative;
 }
 
 .portfolio-header {

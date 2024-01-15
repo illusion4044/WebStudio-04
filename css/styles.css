@@ -358,7 +358,6 @@ margin-bottom: 8px;
 .social-icons-container{
     display: flex;
     gap: 24px;
-    padding-left: 16px;
     justify-content: center; 
 }
 
